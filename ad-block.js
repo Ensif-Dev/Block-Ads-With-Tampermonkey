@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dumbify’s Ad Blocker Script
 // @namespace    https://github.com/Ensif-Dev/
-// @version      1.0.9
+// @version      1.0.10
 // @description  Removes common ad elements from web pages.
 // @author
 // @license      CC BY 4.0; https://creativecommons.org/licenses/by/4.0/
@@ -53,6 +53,6 @@
   // Initial removal
   removeAds();
 
-  // Check every 5 seconds for new ads
-  setInterval(removeAds, 5000);
+  // Check every one and a half seconds for new ads
+  setInterval(removeAds, 1500);
 })();
