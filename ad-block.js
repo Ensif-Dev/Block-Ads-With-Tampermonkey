@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dumbify’s Ad Blocker Script
 // @namespace    https://github.com/Ensif-Dev/
-// @version      1.0.10
+// @version      1.0.11
 // @description  Removes common ad elements from web pages.
 // @author
 // @license      CC BY 4.0; https://creativecommons.org/licenses/by/4.0/
@@ -40,6 +40,7 @@
     '[data-google-query-id]',
     '[id*="infinite-ad"]',
     '[id*="mm-ads-leaderboard"]',
+    '[id*="adhension"]',
   ];
 
   function removeAds() {
