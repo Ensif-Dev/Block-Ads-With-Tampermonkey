@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dumbify’s Ad Blocker Script
 // @namespace    https://github.com/Ensif-Dev/
-// @version      1.0.4
+// @version      1.0.5
 // @description  Removes common ad elements from web pages.
 // @author
 // @license      CC BY 4.0; https://creativecommons.org/licenses/by/4.0/
@@ -32,6 +32,7 @@
     '[aria-label*="Advertisement"]',
     '[class*="pgQSsticky"]',
     '[id*="google_ads_iframe"]',
+    '[id*="AdThrive"]',
   ];
 
   function removeAds() {
