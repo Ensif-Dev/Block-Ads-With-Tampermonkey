@@ -13,14 +13,28 @@
 // @grant        none
 // ==/UserScript==
 (function () {
-  "use strict";
+  'use strict';
 
-  const adSelectors = [".advertisement", ".ad-container", ".sponsored-content", '[class*="advertisement"]', ".google-ad", ".dfp-ad", "#st-ad", ".bordeaux-slot", 'iframe[name*="seedtag_creative"]'];
+  const adSelectors = [
+    '.advertisement',
+    '.ad-container',
+    '.sponsored-content',
+    '[class*="advertisement"]',
+    '.google-ad',
+    '.dfp-ad',
+    '#st-ad',
+    '.bordeaux-slot',
+    'iframe[name*="seedtag_creative"]',
+    '[class*="promotedlink"]',
+    'a[href*="adclick"]',
+    'a[href*="pubads"]',
+    'a[href*="doubleclick.net"]',
+  ];
 
   function removeAds() {
     adSelectors.forEach((selector) => {
       document.querySelectorAll(selector).forEach((element) => {
-        element.style.display = "none";
+        element.style.display = 'none';
       });
     });
   }
